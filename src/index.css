@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@layer utilities {
+  @keyframes spinSlow {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .animate-spin-slow {
+    animation: spinSlow 8s linear infinite;
+  }
+}
+
+:root {
+  --color-crystal-cut: #F8F4ED;
+  --color-seashell-froth: #EDB9BD;
+  --color-romantic-rose: #AA4488;
+  --color-enchanted-berry: #602A77;
+  --color-prune-plum: #211640;
+  --color-tristesse: #0C0C1F;
+}
+
+html, body {
+  background-color: #F8FAFC;
+  color: #0F172A;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+html.dark, html.dark body {
+  background-color: #0C0C1F;
+  color: #F8F4ED;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background: #211640;
+  border: 1px solid #602A77;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: #602A77;
+}
+
+

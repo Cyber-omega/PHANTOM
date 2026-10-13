@@ -1,0 +1,6 @@
+{
+  "name": "PHANTOM: AI Anti-Phishing & Brand Impersonation Defense",
+  "description": "Real-time AI browser security pipeline powered by YOLOv8 vision detection, domain & TLS telemetry, Bayesian discrepancy arbitration, and automated honeypot decoy quarantine.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
